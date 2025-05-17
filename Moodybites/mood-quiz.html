@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Quiz - Moodybites</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="quiz-body">
+    <header class="main-header quiz-header-nav">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/moodylogo.png" alt="Moodybites Logo" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="mood-quiz.html" class="active">Mood Quiz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="mood-quiz-page">
+        <div class="quiz-background"></div>
+        <section class="mood-quiz-section">
+            <div class="quiz-container">
+                <div class="quiz-header">
+                    <h1>What's Your Food Mood?</h1>
+                    <p>Let's find your perfect meal match based on how you feel</p>
+                </div>
+
+                <div class="mood-questionnaire" id="mood-questionnaire">
+                    <div class="questionnaire-container">
+                        <div class="progress-container">
+                            <div class="progress-bar">
+                                <div class="progress" id="form-progress"></div>
+                            </div>
+                            <div class="progress-steps">
+                                <span class="step active" data-step="1">Mood</span>
+                                <span class="step" data-step="2">Flavor</span>
+                                <span class="step" data-step="3">Diet</span>
+                            </div>
+                        </div>
+                        
+                        <form id="mood-form">
+                            <!-- Question 1 -->
+                            <div class="question-slide active" data-question="1">
+                                <h3><span class="question-number">01</span> How are you feeling right now?</h3>
+                                <div class="mood-options">
+                                    <button type="button" class="mood-btn" data-mood="happy">
+                                        <div class="btn-content">
+                                            <i class="fas fa-smile"></i>
+                                            <span>Happy</span>
+                                        </div>
+                                    </button>
+                                    <button type="button" class="mood-btn" data-mood="stressed">
+                                        <div class="btn-content">
+                                            <i class="fas fa-tired"></i>
+                                            <span>Stressed</span>
+                                        </div>
+                                    </button>
+                                    <button type="button" class="mood-btn" data-mood="energetic">
+                                        <div class="btn-content">
+                                            <i class="fas fa-bolt"></i>
+                                            <span>Energetic</span>
+                                        </div>
+                                    </button>
+                                    <button type="button" class="mood-btn" data-mood="relaxed">
+                                        <div class="btn-content">
+                                            <i class="fas fa-peace"></i>
+                                            <span>Relaxed</span>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Question 2 -->
+                            <div class="question-slide" data-question="2">
+                                <h3><span class="question-number">02</span> What flavors are you craving?</h3>
+                                <div class="flavor-options">
+                                    <button type="button" class="flavor-btn" data-flavor="spicy">
+                                        <div class="btn-content">
+                                            <i class="fas fa-pepper-hot"></i>
+                                            <span>Spicy</span>
+                                        </div>
+                                    </button>
+                                    <button type="button" class="flavor-btn" data-flavor="sweet">
+                                        <div class="btn-content">
+                                            <i class="fas fa-cookie"></i>
+                                            <span>Sweet</span>
+                                        </div>
+                                    </button>
+                                    <button type="button" class="flavor-btn" data-flavor="savory">
+                                        <div class="btn-content">
+                                            <i class="fas fa-cheese"></i>
+                                            <span>Savory</span>
+                                        </div>
+                                    </button>
+                                    <button type="button" class="flavor-btn" data-flavor="fresh">
+                                        <div class="btn-content">
+                                            <i class="fas fa-leaf"></i>
+                                            <span>Fresh</span>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Question 3 -->
+                            <div class="question-slide" data-question="3">
+                                <h3><span class="question-number">03</span> Any dietary preferences?</h3>
+                                <div class="dietary-options">
+                                    <label class="dietary-checkbox">
+                                        <input type="checkbox" name="dietary" value="vegetarian">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="checkbox-text">
+                                            <i class="fas fa-carrot"></i>
+                                            Vegetarian
+                                        </span>
+                                    </label>
+                                    <label class="dietary-checkbox">
+                                        <input type="checkbox" name="dietary" value="vegan">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="checkbox-text">
+                                            <i class="fas fa-seedling"></i>
+                                            Vegan
+                                        </span>
+                                    </label>
+                                    <label class="dietary-checkbox">
+                                        <input type="checkbox" name="dietary" value="gluten-free">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="checkbox-text">
+                                            <i class="fas fa-bread-slice"></i>
+                                            Gluten-Free
+                                        </span>
+                                    </label>
+                                    <label class="dietary-checkbox">
+                                        <input type="checkbox" name="dietary" value="none">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="checkbox-text">
+                                            <i class="fas fa-utensils"></i>
+                                            No Restrictions
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Navigation Buttons -->
+                            <div class="form-navigation">
+                                <button type="button" class="nav-btn prev-btn" style="display: none;">
+                                    <i class="fas fa-arrow-left"></i>
+                                    Previous
+                                </button>
+                                <button type="button" class="nav-btn next-btn">
+                                    Next
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                                <button type="submit" class="submit-btn" style="display: none;">
+                                    <i class="fas fa-utensils"></i>
+                                    Find My Perfect Meal
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Results Section -->
+                <div class="results-section" id="results-section" style="display: none;">
+                    <div class="results-container">
+                        <h3>Your Perfect Meal Suggestions</h3>
+                        <div class="recommendations-grid" id="recommendations-grid">
+                            <!-- Recommendations will be dynamically inserted here -->
+                        </div>
+                        <button class="restart-btn">
+                            <i class="fas fa-redo"></i>
+                            Start Over
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 

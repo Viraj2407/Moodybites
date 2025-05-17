@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodybites - Your Digital Food Companion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        // Prevent flash of unstyled content
+        document.documentElement.classList.add('loading');
+        window.addEventListener('load', function() {
+            document.documentElement.classList.remove('loading');
+        });
+    </script>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/moodylogo.png" alt="Moodybites Logo" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="mood-quiz.html">Mood Quiz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Welcome Section -->
+        <section class="welcome-section" id="home">
+            <div class="welcome-content">
+                <h1>Welcome to Moodybites</h1>
+                <p>Your personalized food recommendation companion</p>
+                <a href="mood-quiz.html" class="get-started-btn">GET STARTED</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Moodybites is your go-to platform for discovering the perfect meal based on your mood and preferences. We believe in creating memorable dining experiences that match your current state of mind.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/new poster.png" alt="About Moodybites">
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2>Our Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Group Recommendations</h3>
+                    <p>Get personalized suggestions for your entire group</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Dietary Preferences</h3>
+                    <p>Customize recommendations based on your dietary needs</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-random"></i>
+                    <h3>Surprise Me</h3>
+                    <p>Discover new and exciting food options</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Trending & Seasonal</h3>
+                    <p>Stay updated with the latest food trends</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Perfect Meal Section -->
+    <section class="perfect-meal-section">
+        <div class="perfect-meal-container">
+            <div class="perfect-meal-header">
+                <h2>Find Your Perfect Meal</h2>
+                <p>Discover delicious meals tailored to your mood and preferences</p>
+            </div>
+            
+            <div class="meal-cards-container">
+                <!-- Meal Card 1 -->
+                <div class="meal-card">
+                    <div class="meal-card-image">
+                        <img src="images/happy-meal.jpg" alt="Happy Mood Meal">
+                    </div>
+                    <div class="meal-card-content">
+                        <h3>Happy Mood Meals</h3>
+                        <p>Colorful and energizing dishes to boost your positive vibes</p>
+                        <div class="meal-card-tags">
+                            <span class="meal-tag">Energizing</span>
+                            <span class="meal-tag">Colorful</span>
+                            <span class="meal-tag">Fresh</span>
+                        </div>
+                        <a href="#" class="explore-meal-btn">Explore Meals</a>
+                    </div>
+                </div>
+
+                <!-- Meal Card 2 -->
+                <div class="meal-card">
+                    <div class="meal-card-image">
+                        <img src="images/comfort-meal.jpg" alt="Comfort Mood Meal">
+                    </div>
+                    <div class="meal-card-content">
+                        <h3>Comfort Food</h3>
+                        <p>Warm and satisfying dishes for when you need a pick-me-up</p>
+                        <div class="meal-card-tags">
+                            <span class="meal-tag">Comforting</span>
+                            <span class="meal-tag">Hearty</span>
+                            <span class="meal-tag">Satisfying</span>
+                        </div>
+                        <a href="#" class="explore-meal-btn">Explore Meals</a>
+                    </div>
+                </div>
+
+                <!-- Meal Card 3 -->
+                <div class="meal-card">
+                    <div class="meal-card-image">
+                        <img src="images/energetic-meal.jpg" alt="Energetic Mood Meal">
+                    </div>
+                    <div class="meal-card-content">
+                        <h3>Energy Boost</h3>
+                        <p>Nutritious and energizing meals to keep you going strong</p>
+                        <div class="meal-card-tags">
+                            <span class="meal-tag">Healthy</span>
+                            <span class="meal-tag">Energetic</span>
+                            <span class="meal-tag">Balanced</span>
+                        </div>
+                        <a href="#" class="explore-meal-btn">Explore Meals</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-all-meals">
+                <button class="view-all-btn">View All Meals</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <a href="index.html">
+                    <img src="images/moodylogo.png" alt="Moodybites Logo" class="logo-img">
+                </a>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="mood-quiz.html">Mood Quiz</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Moodybites. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
